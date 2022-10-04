@@ -10,21 +10,23 @@
 
 # Commit 2 - Initial Solution
 
-def reverse_a_number(number)
-  number = number.to_s
-  reverse_number = ""
-  number.chars
-  array_length = number.length
-  number.length.times do 
-    reverse_number << number[array_length - 1]
-    array_length -= 1
-  end
-  return reverse_number.to_i
-end
+# def reverse_a_number(number)
+#   number = number.to_s
+#   reverse_number = ""
+#   number.chars
+#   array_length = number.length
+#   number.length.times do 
+#     reverse_number << number[array_length - 1]
+#     array_length -= 1
+#   end
+#   return reverse_number.to_i
+# end
 
 # Commit 3 - No Strings Solution
 
-
+  def reverse_a_number(number)
+    number.digits.join.to_i
+  end
 
 # Commit 4 - Refactor Solution
 
