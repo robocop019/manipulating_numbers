@@ -1,6 +1,6 @@
 # Commit 1 - Research
 
-# 1. 
+# 1. The p statement lets you know it's an array of strings
 
 # Commit 2 - Pseudocode
 
