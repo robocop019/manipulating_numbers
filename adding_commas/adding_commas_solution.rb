@@ -15,7 +15,27 @@
 # Commit 3 - Initial Solution
 
 def add_commas(number)
-  # write code here  
+  string = number.to_s
+  num_array = []
+  num_string = []
+  index = 0
+  comma = 1
+
+  string.length.times do
+    num_array << string[index]
+    index += 1
+  end
+
+  num_array.reverse_each do |num|
+    if comma % 3 == 0
+      num_string << num
+      num_string << ","
+    else
+      num_string << num
+    end
+    comma += 1
+  end
+  return num_string.reverse.join('')
 end
 
 # Commit 5 - Refactor Solution
@@ -24,5 +44,11 @@ end
 
 # Commit 4 - Write Runner Code / Tests
 
-puts add_commas(5) == "5" # I've written the first test, write the rest on your own.
+p add_commas(5)
+p add_commas(299)
+p add_commas(299)
+p add_commas(1818)
+p add_commas(1234567)
+p add_commas(23455678)
+# == "5" # I've written the first test, write the rest on your own.
 
