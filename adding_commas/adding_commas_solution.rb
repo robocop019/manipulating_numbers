@@ -26,16 +26,21 @@ def add_commas(number)
     index += 1
   end
 
-  num_array.reverse_each do |num|
-    if comma % 3 == 0
-      num_string << num
-      num_string << ","
-    else
-      num_string << num
+  if num_array.length > 3
+
+    num_array.reverse_each do |num|
+      if comma % 3 == 0
+        num_string << num
+        num_string << ","
+      else
+        num_string << num
+      end
+      comma += 1
     end
-    comma += 1
+    return num_string.reverse.join('')
+  else
+    return num_array.join('')
   end
-  return num_string.reverse.join('')
 end
 
 # Commit 5 - Refactor Solution
