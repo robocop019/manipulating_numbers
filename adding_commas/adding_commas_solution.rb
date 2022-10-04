@@ -8,9 +8,9 @@
 # output:  String  "5" "299"   "1,818"  "9,999,999"
 
 # Steps
-# 1 - 
-# 2 -
-# 3 - 
+# 1 - Read the length of the integer  
+# 2 - If longer than 3 chars add commas where needed
+# 3 - Loop through number and add commas
 
 # Commit 3 - Initial Solution
 
